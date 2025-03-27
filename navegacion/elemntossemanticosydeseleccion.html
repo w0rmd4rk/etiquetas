@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es" itemscope itemtype="http://schema.org/Article">
+<head>
+    <meta charset="UTF-8">
+    <title itemprop="headline">Guía Semántica</title>
+    <link rel="stylesheet" href="../style/styles.css">
+
+</head>
+
+<body>
+    <header role="banner">
+        <nav aria-label="Navegación principal">
+            <!-- Menú -->
+        </nav>
+    </header>
+
+    <main role="main">
+        <article itemscope>
+            <h1 itemprop="name">Título del Artículo</h1>
+            <section aria-labelledby="seccion1">
+                <h2 id="seccion1">Sección 1</h2>
+                <figure>
+                    <img src="diagrama.jpg" alt="Diagrama de flujo" itemprop="image">
+                    <figcaption>Figura 1: Proceso semántico</figcaption>
+                </figure>
+                <blockquote>
+                    <p><cite>W3C</cite> recomienda:</p>
+                    <q>Usar semántica apropiada</q>
+                </blockquote>
+            </section>
+
+            <details>
+                <summary>Ver código</summary>
+                <pre><code>&lt;div&gt;Ejemplo&lt;/div&gt;</code></pre>
+            </details>
+        </article>
+    </main>
+
+    <dialog id="modal">
+        <form method="dialog">
+            <p>¿Confirmar acción?</p>
+            <button value="confirmar">OK</button>
+        </form>
+    </dialog>
+
+    <footer role="contentinfo">
+        <address itemprop="author">Contacto: <a href="mailto:info@ejemplo.com">Autor</a></address>
+        <time datetime="2024-03-20" itemprop="datePublished">Publicado: 20/03/2024</time>
+    </footer>
+</body>
+</html>

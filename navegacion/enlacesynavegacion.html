@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces y Navegación</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="contenido-pagina">
+    <h1 class="titulo-seccion">🔗 Enlaces y Navegación HTML</h1>
+
+    <!-- Enlaces básicos -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;a&gt;</span> Enlace básico</h2>
+            <p>Hipervínculo a recursos externos o internos</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;a href="https://ejemplo.com" target="_blank" rel="noopener"&gt;
+    Visitar sitio externo
+&lt;/a&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <a href="#demo" class="demo-enlace">Visitar sitio externo (demo)</a>
+        </div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;nav&gt;</span> Menú de navegación</h2>
+            <p>Bloque semántico para enlaces principales</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;nav class="menu-principal"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#servicios"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <nav class="demo-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Enlaces especiales -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2>⚡ Enlaces especiales</h2>
+            <p>Para correos, teléfonos y secciones internas</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;a href="mailto:contacto@ejemplo.com"&gt;Enviar correo&lt;/a&gt;
+&lt;a href="tel:+123456789"&gt;Llamar ahora&lt;/a&gt;
+&lt;a href="#seccion2"&gt;Ir a sección&lt;/a&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <div class="demo-enlaces-especiales">
+                <a href="mailto:demo@ejemplo.com" class="demo-enlace">📧 Enviar correo</a>
+                <a href="tel:+123456789" class="demo-enlace">📞 Llamar ahora</a>
+                <a href="#top" class="demo-enlace">⬆️ Volver arriba</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas HTML</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="contenido-pagina">
+    <h1 class="titulo-seccion">📊 Tablas HTML</h1>
+
+    <!-- Tabla Básica -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;table&gt;</span> Tabla básica</h2>
+            <p>Estructura fundamental de una tabla</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nombre&lt;/th&gt;
+        &lt;th&gt;Edad&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ana&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <table class="demo-tabla">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>25</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tabla Compleja -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2>🏗️ Tabla compleja</h2>
+            <p>Con cabeceras, cuerpo y pie de tabla</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;table&gt;
+    &lt;caption&gt;Horario de Clases&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Hora&lt;/th&gt;
+            &lt;th&gt;Lunes&lt;/th&gt;
+            &lt;th colspan="2"&gt;Miércoles&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;8:00&lt;/td&gt;
+            &lt;td&gt;Matemáticas&lt;/td&gt;
+            &lt;td&gt;Física&lt;/td&gt;
+            &lt;td rowspan="2"&gt;Laboratorio&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &td colspan="4"&gt;Total clases: 5&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <table class="demo-tabla-compleja">
+                <caption>Horario de Clases</caption>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th colspan="2">Miércoles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00</td>
+                        <td>Matemáticas</td>
+                        <td>Física</td>
+                        <td rowspan="2">Laboratorio</td>
+                    </tr>
+                    <tr>
+                        <td>9:00</td>
+                        <td>Historia</td>
+                        <td>Química</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total clases: 5</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

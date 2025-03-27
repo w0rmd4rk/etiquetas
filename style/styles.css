@@ -1,0 +1,1359 @@
+/* styles.css */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    line-height: 1.6;
+}
+
+/* -------------------------------------- */
+/* Estructura Principal (index.html) */
+/* -------------------------------------- */
+#menu-column {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.1);
+}
+
+#content-column {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    display: block;
+    background: white;
+}
+
+/* -------------------------------------- */
+/* Estilos del Menú */
+/* -------------------------------------- */
+#menu-column h1 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+}
+
+#menu-column ul {
+    list-style: none;
+}
+
+#menu-column li {
+    margin: 12px 0;
+}
+
+#menu-column a {
+    display: block;
+    padding: 12px;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+#menu-column a:hover {
+    background: #3498db;
+    color: white;
+    transform: translateX(10px);
+}
+
+/* -------------------------------------- */
+/* Estilos para Páginas de Contenido */
+/* -------------------------------------- */
+.contenido-pagina {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenedores de ejemplos */
+.etiqueta-container {
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.etiqueta-header {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.ejemplo-codigo {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    margin: 15px 0;
+    white-space: pre-wrap;
+}
+
+.ejemplo-visual {
+    border: 2px solid #3498db;
+    padding: 20px;
+    margin: 15px 0;
+    background: white;
+    border-radius: 6px;
+}
+
+/* -------------------------------------- */
+/* Estilos Específicos para etiquetasdecontenido.html */
+/* -------------------------------------- */
+/* Encabezados demo */
+.demo-encabezado1 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin: 15px 0;
+}
+
+.demo-encabezado2 {
+    font-size: 1.5em;
+    color: #3498db;
+    margin: 10px 0;
+}
+
+/* Listas */
+.ejemplo-visual ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    padding: 10px 0;
+}
+
+.ejemplo-visual li {
+    margin: 8px 0;
+    color: #555;
+}
+
+/* Imágenes */
+.ejemplo-visual img {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+/* Citas */
+.ejemplo-visual blockquote {
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    margin: 15px 0;
+    color: #666;
+    font-style: italic;
+}
+
+/* -------------------------------------- */
+/* Responsive Design */
+/* -------------------------------------- */
+@media (max-width: 768px) {
+    #menu-column {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    #content-column {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+/* Añade al final de tu CSS existente */
+.titulo-principal {
+    color: #2c3e50;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #3498db;
+}
+
+.demo-lista {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.demo-lista li {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    background: white;
+    border-left: 3px solid #3498db;
+}
+
+.demo-definicion dt {
+    color: #2c3e50;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.demo-definicion dd {
+    color: #666;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    border-left: 2px solid #3498db;
+}
+
+/* Ajustes para iframe */
+.contenido-pagina {
+    padding: 2rem;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .etiqueta-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .ejemplo-visual {
+        padding: 1rem;
+    }
+}
+
+/* Añade esto al final de tu CSS existente */
+
+/* Estilos para enlaces */
+.demo-enlace {
+    color: #3498db;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+    display: inline-block;
+    margin: 5px 0;
+    border: 1px solid #3498db;
+}
+
+.demo-enlace:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Menú de navegación demo */
+.demo-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.demo-menu a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.demo-menu a:hover {
+    background: #3498db;
+    color: white;
+}
+
+/* Enlaces especiales */
+.demo-enlaces-especiales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+/* Añade estos estilos al final de tu CSS */
+
+/* Estilos para imágenes */
+.demo-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+}
+
+/* Reproductores multimedia */
+.demo-audio,
+.demo-video {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    background: #000;
+}
+
+.demo-audio {
+    max-width: 400px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .demo-video {
+        max-height: 300px;
+    }
+}
+
+/* Contenedores multimedia */
+.ejemplo-visual > * {
+    margin: 1rem 0;
+}
+/* Añade estos estilos al final de tu CSS */
+
+/* Estilos generales para tablas */
+.demo-tabla,
+.demo-tabla-compleja {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.demo-tabla th,
+.demo-tabla td,
+.demo-tabla-compleja th,
+.demo-tabla-compleja td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.demo-tabla th,
+.demo-tabla-compleja th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.demo-tabla-compleja caption {
+    font-size: 1.2em;
+    margin: 10px 0;
+    font-weight: bold;
+    caption-side: top;
+}
+
+.demo-tabla tbody tr:nth-child(even),
+.demo-tabla-compleja tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.demo-tabla-compleja tfoot td {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .tabla-responsive {
+        overflow-x: auto;
+        display: block;
+    }
+    
+    .demo-tabla-compleja {
+        min-width: 600px;
+    }
+}
+/* Añade estos estilos al final de tu CSS */
+
+/* Contenedor del formulario */
+.demo-formulario {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Grupos de campos */
+.grupo-formulario {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+}
+
+.grupo-formulario legend {
+    font-weight: 600;
+    color: #2c3e50;
+    padding: 0 1rem;
+    background: #fff;
+}
+
+/* Elementos del formulario */
+.demo-formulario label {
+    display: grid;
+    gap: 0.5rem;
+    color: #34495e;
+    font-size: 0.95rem;
+}
+
+.demo-formulario input:not([type="checkbox"], [type="radio"]),
+.demo-formulario select,
+.demo-formulario textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.demo-formulario input:focus,
+.demo-formulario select:focus,
+.demo-formulario textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Elementos específicos */
+input[type="range"] {
+    padding: 0 !important;
+    height: 4px;
+}
+
+input[type="color"] {
+    padding: 2px !important;
+    height: 40px;
+    width: 60px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    padding: 0.5rem !important;
+    border: 2px dashed #e0e0e0 !important;
+    background: #f8f9fa;
+}
+
+.grupo-radio {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.contador-caracteres {
+    color: #7f8c8d;
+    text-align: right;
+    font-size: 0.85rem;
+}
+
+/* Botones */
+.botones-formulario {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.demo-boton {
+    background: #3498db;
+    color: white !important;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.demo-boton-secundario {
+    background: #2c3e50;
+}
+
+.demo-boton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Validaciones */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: #e74c3c !important;
+}
+
+input:invalid:focus,
+select:invalid:focus,
+textarea:invalid:focus {
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .demo-formulario {
+        padding: 1rem;
+    }
+    
+    .botones-formulario {
+        flex-direction: column;
+    }
+    
+    .demo-boton {
+        justify-content: center;
+    }
+}
+/* styles.css */
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.contenido-pagina {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para la Biblia */
+.titulo-biblia {
+    text-align: center;
+    color: #2c3e50;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 1rem;
+}
+
+.seccion-biblia {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.seccion-biblia h2 {
+    color: #3498db;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+}
+
+/* Contenedores de Ejemplos */
+.etiqueta-container {
+    background: white;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.etiqueta-header {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.etiqueta-header h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.tag {
+    color: #3498db;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+}
+
+.ejemplo-codigo {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+.ejemplo-visual {
+    padding: 1.5rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 8px;
+    margin-top: 1rem;
+    background: white;
+}
+
+/* Elementos de Formulario */
+input:not([type="checkbox"], [type="radio"]),
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Elementos Específicos */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+input[type="range"] {
+    padding: 0;
+    height: 4px;
+}
+
+input[type="color"] {
+    padding: 2px !important;
+    height: 40px;
+    width: 80px;
+}
+
+input[type="file"] {
+    padding: 0.5rem !important;
+    border: 2px dashed #ddd !important;
+    background: #f8f9fa;
+}
+
+progress, meter {
+    width: 100%;
+    height: 20px;
+    margin: 1rem 0;
+}
+
+/* Validación */
+input:invalid,
+select:invalid {
+    border-color: #e74c3c;
+}
+
+input:invalid:focus,
+select:invalid:focus {
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido-pagina {
+        padding: 1rem;
+    }
+    
+    .titulo-biblia {
+        font-size: 2rem;
+    }
+    
+    .seccion-biblia {
+        padding: 1rem;
+    }
+}
+/* ============================================= */
+/* Estilos para la estructura semántica HTML */
+/* ============================================= */
+
+/* Header principal */
+header[role="banner"] {
+    background: #2c3e50;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Navegación principal */
+nav[aria-label="Navegación principal"] {
+    background: rgba(255,255,255,0.1);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+/* Contenido principal */
+main[role="main"] {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Artículos */
+article {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Secciones */
+section[aria-labelledby] {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-left: 4px solid #3498db;
+    background: #f8f9fa;
+}
+
+/* Figuras */
+figure {
+    margin: 1.5rem 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Citas */
+blockquote {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+/* Acordeón */
+details {
+    margin: 1.5rem 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+summary {
+    padding: 1rem;
+    cursor: pointer;
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Modal */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: min(90%, 600px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer[role="contentinfo"] {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main[role="main"] {
+        padding: 1rem;
+    }
+    
+    article {
+        padding: 1rem;
+    }
+    
+    dialog {
+        width: 95%;
+        padding: 1rem;
+    }
+}
+
+/* Microdatos */
+[itemscope] {
+    border: 2px dashed rgba(52, 152, 219, 0.3);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+/* Elementos de tiempo */
+time {
+    display: inline-block;
+    background: #f8f9fa;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Direcciones */
+address {
+    font-style: normal;
+    margin: 1rem 0;
+}
+
+/* styles.css */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------- */
+/* Estructura Principal */
+/* -------------------------------------- */
+#menu-column {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: #f0f0f0;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.1);
+}
+
+#content-column {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    display: block;
+    background: white;
+}
+
+/* -------------------------------------- */
+/* Estilos del Menú */
+/* -------------------------------------- */
+#menu-column h1 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+}
+
+#menu-column ul {
+    list-style: none;
+}
+
+#menu-column li {
+    margin: 12px 0;
+}
+
+#menu-column a {
+    display: block;
+    padding: 12px;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+#menu-column a:hover {
+    background: #3498db;
+    color: white;
+    transform: translateX(10px);
+}
+
+/* -------------------------------------- */
+/* Responsive Design */
+/* -------------------------------------- */
+@media (max-width: 768px) {
+    #menu-column {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    
+    #content-column {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    #menu-column a:hover {
+        transform: none;
+    }
+    
+    iframe {
+        height: calc(100vh - 150px); /* Ajuste para móviles */
+    }
+}
+/* Añade esto al final de tu CSS existente */
+
+/* Estilos para la Biblia de Meta-Información */
+.titulo-biblia {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.seccion-biblia {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.etiqueta-meta {
+    background: #2c3e50;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.lista-recursos {
+    border-left: 4px solid #3498db;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.lista-recursos li {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    background: rgba(255,255,255,0.9);
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.lista-recursos li:hover {
+    transform: translateX(10px);
+}
+
+.badge-seo {
+    background: #3498db;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8em;
+    margin-left: 1rem;
+}
+
+/* Estilos para tablas de referencia */
+.tabla-referencia {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.tabla-referencia th {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+}
+
+.tabla-referencia td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-referencia tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Estilos para ejemplos interactivos */
+.demo-meta {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: white;
+}
+
+.demo-meta pre {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+/* Estilos para formularios de validación */
+.form-validacion {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+
+.form-validacion input[type="url"] {
+    border: 2px solid #3498db;
+    padding: 0.8rem;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* Estilos responsive adicionales */
+@media (max-width: 768px) {
+    .seccion-biblia {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .tabla-referencia {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Estilos para mensajes de validación */
+.mensaje-validacion {
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+.mensaje-validacion.error {
+    background: #f8d7da;
+    border: 2px solid #e74c3c;
+    color: #721c24;
+}
+
+.mensaje-validacion.exito {
+    background: #d4edda;
+    border: 2px solid #2ecc71;
+    color: #155724;
+}
+
+/* Iconos para listas */
+.lista-recursos li::before {
+    content: "►";
+    color: #3498db;
+    margin-right: 0.8rem;
+    font-size: 0.8em;
+}
+/* Estilos para etiquetas obsoletas */
+.obsoleta {
+    position: relative;
+    border: 2px solid #e74c3c;
+    background: #fdedec;
+}
+
+.obsoleta-tag {
+    background: #e74c3c !important;
+    color: white !important;
+    padding: 0.3rem 0.8rem !important;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.obsoleta::before {
+    content: "⛔ Obsoleto";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.modern-alternative {
+    background: #d4efdf;
+    border-left: 4px solid #2ecc71;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.modern-alternative p {
+    color: #145a32;
+    margin: 0;
+}
+
+.modern-alternative code {
+    background: #2ecc71;
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+/* Animación para ejemplos obsoletos */
+.obsoleta-ejemplo {
+    animation: parpadeo-obsoleto 2s infinite;
+}
+
+@keyframes parpadeo-obsoleto {
+    0% { opacity: 0.8; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0.8; }
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .obsoleta::before {
+        top: -10px;
+        right: -10px;
+        font-size: 0.7em;
+        padding: 0.3rem 0.8rem;
+    }
+    
+    .modern-alternative {
+        margin: 1rem 0;
+    }
+}/* Añade esto al final de tu CSS existente */
+
+/* Estructura Principal */
+.content-column {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    background: white;
+    padding: 2rem;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Componentes Generales */
+.component-section {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.section-title {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+/* Ejemplos de Código */
+.code-example {
+    background: #2c3e50;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.code-example pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.95rem;
+}
+
+/* Demostraciones en Vivo */
+.live-demo {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    background: white;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Botones Interactivos */
+.interactive-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.interactive-btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.hover-btn {
+    position: relative;
+    overflow: hidden;
+    background: #2c3e50;
+    color: white;
+    transition: all 0.4s;
+}
+
+.hover-btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    top: 0;
+    left: -100%;
+    transition: 0.4s;
+}
+
+.hover-btn:hover::after {
+    left: 100%;
+}
+
+/* Botón de Carga */
+.loading-btn {
+    background: #95a5a6;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.spinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Acordeones */
+.accordion details {
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+.accordion summary {
+    padding: 1rem;
+    background: #f8f9fa;
+    cursor: pointer;
+    font-weight: 600;
+    color: #2c3e50;
+    transition: all 0.3s;
+}
+
+.accordion summary:hover {
+    background: #3498db;
+    color: white;
+}
+
+.accordion p {
+    padding: 1.5rem;
+    margin: 0;
+    background: white;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* Gráficos SVG */
+.custom-chart {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 1rem;
+    background: white;
+}
+
+.custom-chart circle {
+    fill: #3498db;
+    opacity: 0.3;
+}
+
+.custom-chart path {
+    fill: #e74c3c;
+    stroke: #2c3e50;
+    stroke-width: 2;
+}
+
+/* Canvas */
+#animation-canvas {
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    background: white;
+    transition: all 0.3s;
+}
+
+#animation-canvas:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-column {
+        margin-left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .live-demo {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .custom-chart {
+        width: 100%;
+        max-width: 200px;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Interactivos y Gráficos</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <!-- Contenido principal (simula la columna derecha) -->
+    
+        <div class="content-container">
+            
+            <!-- Sección de Botones Interactivos -->
+            <section class="component-section">
+                <h2 class="section-title">Botones Avanzados</h2>
+                
+                <div class="code-example">
+                    <pre><code>&lt;button class="interactive-btn"&gt;Normal&lt;/button&gt;
+&lt;button class="hover-btn"&gt;Efecto Wave&lt;/button&gt;
+&lt;button class="loading-btn" disabled&gt;
+    &lt;span class="spinner"&gt;&lt;/span&gt; Cargando...
+&lt;/button&gt;</code></pre>
+                </div>
+                
+                <div class="live-demo">
+                    <button class="interactive-btn">Botón Normal</button>
+                    <button class="hover-btn">Efecto Wave</button>
+                    <button class="loading-btn" disabled>
+                        <span class="spinner"></span> Cargando...
+                    </button>
+                </div>
+            </section>
+
+            <!-- Sección de Acordeones -->
+            <section class="component-section">
+                <h2 class="section-title">Acordeones Animados</h2>
+                
+                <div class="code-example">
+                    <pre><code>&lt;div class="accordion"&gt;
+    &lt;details&gt;
+        &lt;summary&gt;¿Cómo funciona?&lt;/summary&gt;
+        &lt;p&gt;Los acordeones permiten mostrar contenido adicional...&lt;/p&gt;
+    &lt;/details&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+                
+                <div class="live-demo">
+                    <div class="accordion">
+                        <details>
+                            <summary>Primer Acordeón</summary>
+                            <p>Contenido del primer elemento acordeón</p>
+                        </details>
+                        <details>
+                            <summary>Segundo Acordeón</summary>
+                            <p>Contenido del segundo elemento acordeón</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Gráficos SVG -->
+            <section class="component-section">
+                <h2 class="section-title">Gráficos Vectoriales</h2>
+                
+                <div class="code-example">
+                    <pre><code>&lt;svg class="custom-chart" viewBox="0 0 100 100"&gt;
+    &lt;circle cx="50" cy="50" r="40"/&gt;
+    &lt;path d="M30 30 L70 30 L50 70 Z"/&gt;
+&lt;/svg&gt;</code></pre>
+                </div>
+                
+                <div class="live-demo">
+                    <svg class="custom-chart" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="40"/>
+                        <path d="M30 30 L70 30 L50 70 Z"/>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- Sección Canvas Animado -->
+            <section class="component-section">
+                <h2 class="section-title">Animaciones con Canvas</h2>
+                
+                <div class="code-example">
+                    <pre><code>&lt;canvas id="animation-canvas" width="300" height="150"&gt;&lt;/canvas&gt;</code></pre>
+                </div>
+                
+                <div class="live-demo">
+                    <canvas id="animation-canvas" width="300" height="150"></canvas>
+                </div>
+            </section>
+
+        </div>
+    
+
+    <script>
+        // Animación para Canvas
+        //esto es extra
+        const canvas = document.getElementById('animation-canvas');
+        const ctx = canvas.getContext('2d');
+        let positionX = 0;
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#3498db';
+            ctx.fillRect(positionX, 50, 50, 50);
+            positionX = (positionX + 2) % 250;
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios y entradas de datos</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="contenido-pagina">
+    <h1 class="titulo-biblia">📖 Formularios y entradas de datos</h1>
+
+    <!-- Sección 1: Elementos Básicos -->
+    <section class="seccion-biblia">
+        <h2>1. Elementos Básicos de Formulario</h2>
+        
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">&lt;form&gt;</span> Contenedor Principal</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;form action="/procesar" method="POST"&gt;
+    &lt;!-- Campos del formulario --&gt;
+&lt;/form&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <form class="demo-form">
+                    <p>Formulario vacío (contendor principal)</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">&lt;input&gt;</span> Campo Básico</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="text" placeholder="Escribe tu nombre"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="text" placeholder="Escribe tu nombre">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: Todos los Tipos de Inputs -->
+    <section class="seccion-biblia">
+        <h2>2. Tipos de Inputs HTML5</h2>
+        
+        <!-- Text -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="text"</span> Texto Simple</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="text" placeholder="Nombre completo"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="text" placeholder="Nombre completo">
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="password"</span> Contraseña</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="password" placeholder="••••••••"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="password" placeholder="••••••••">
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="email"</span> Correo Electrónico</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="email" placeholder="usuario@dominio.com"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="email" placeholder="usuario@dominio.com">
+            </div>
+        </div>
+
+        <!-- Tel -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="tel"</span> Teléfono</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="tel" pattern="[0-9]{10}" placeholder="10 dígitos"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="tel" pattern="[0-9]{10}" placeholder="10 dígitos">
+            </div>
+        </div>
+
+        <!-- URL -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="url"</span> Dirección Web</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="url" placeholder="https://ejemplo.com"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="url" placeholder="https://ejemplo.com">
+            </div>
+        </div>
+
+        <!-- Number -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="number"</span> Número</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="number" min="0" max="100" step="5"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="number" min="0" max="100" step="5">
+            </div>
+        </div>
+
+        <!-- Range -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="range"</span> Control Deslizante</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="range" min="0" max="100" value="50"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="range" min="0" max="100" value="50">
+            </div>
+        </div>
+
+        <!-- Date -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="date"</span> Fecha</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="date" min="2000-01-01" max="2023-12-31"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="date" min="2000-01-01" max="2023-12-31">
+            </div>
+        </div>
+
+        <!-- Time -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="time"</span> Hora</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="time" step="1800"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="time" step="1800">
+            </div>
+        </div>
+
+        <!-- Color -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="color"</span> Selector de Color</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="color" value="#3498db"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="color" value="#3498db">
+            </div>
+        </div>
+
+        <!-- File -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="file"</span> Subir Archivo</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="file" accept=".pdf,.jpg" multiple&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="file" accept=".pdf,.jpg" multiple>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="search"</span> Búsqueda</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="search" placeholder="Buscar..."&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="search" placeholder="Buscar...">
+            </div>
+        </div>
+
+        <!-- Hidden -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="hidden"</span> Campo Oculto</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="hidden" name="id_usuario" value="123"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <small>(Campo no visible en el formulario)</small>
+            </div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="checkbox"</span> Casilla de Verificación</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;label&gt;
+    &lt;input type="checkbox" checked&gt; Acepto los términos
+&lt;/label&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <label><input type="checkbox" checked> Acepto los términos</label>
+            </div>
+        </div>
+
+        <!-- Radio -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="radio"</span> Botón de Opción</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;label&gt;
+    &lt;input type="radio" name="genero" value="hombre"&gt; Hombre
+&lt;/label&gt;
+&lt;label&gt;
+    &lt;input type="radio" name="genero" value="mujer"&gt; Mujer
+&lt;/label&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <label><input type="radio" name="genero" value="hombre"> Hombre</label>
+                <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+            </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="submit"</span> Botón de Envío</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="submit" value="Enviar Formulario"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="submit" value="Enviar Formulario">
+            </div>
+        </div>
+
+        <!-- Reset -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="reset"</span> Botón de Reinicio</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="reset" value="Limpiar Campos"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="reset" value="Limpiar Campos">
+            </div>
+        </div>
+
+        <!-- Image -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">type="image"</span> Botón con Imagen</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input type="image" src="boton.png" alt="Enviar"&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input type="image" src="https://via.placeholder.com/100x40" 
+                       alt="Botón de ejemplo" 
+                       style="height: 40px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Atributos Esenciales -->
+    <section class="seccion-biblia">
+        <h2>3. Atributos Clave</h2>
+        
+        <div class="atributos-grid">
+            <!-- Required -->
+            <div class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h3><span class="tag">required</span> Campo Obligatorio</h3>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;input type="text" required&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <!-- Pattern -->
+            <div class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h3><span class="tag">pattern</span> Validación con RegEx</h3>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;input pattern="[A-Za-z]{3}" title="3 letras"&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <input pattern="[A-Za-z]{3}" title="3 letras">
+                </div>
+            </div>
+
+            <!-- Placeholder -->
+            <div class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h3><span class="tag">placeholder</span> Texto Guía</h3>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;input placeholder="Ej: +52 55 1234 5678"&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <input placeholder="Ej: +52 55 1234 5678">
+                </div>
+            </div>
+
+            <!-- Autocomplete -->
+            <div class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h3><span class="tag">autocomplete</span> Autollenado</h3>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;input autocomplete="email"&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <input autocomplete="email">
+                </div>
+            </div>
+
+            <!-- Min/Max -->
+            <div class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h3><span class="tag">min/max</span> Rango Numérico</h3>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;input type="number" min="18" max="99"&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <input type="number" min="18" max="99">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Elementos Avanzados -->
+    <section class="seccion-biblia">
+        <h2>4. Componentes Avanzados</h2>
+        
+        <!-- Datalist -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">&lt;datalist&gt;</span> Autocompletado</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;input list="navegadores"&gt;
+&lt;datalist id="navegadores"&gt;
+    &lt;option value="Chrome"&gt;
+    &lt;option value="Firefox"&gt;
+&lt;/datalist&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <input list="demo-navegadores">
+                <datalist id="demo-navegadores">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                </datalist>
+            </div>
+        </div>
+
+        <!-- Progress -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">&lt;progress&gt;</span> Barra de Progreso</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <progress value="70" max="100">70%</progress>
+            </div>
+        </div>
+
+        <!-- Meter -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">&lt;meter&gt;</span> Indicador de Medida</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;meter min="0" max="100" value="75"&gt;&lt;/meter&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <meter min="0" max="100" value="75"></meter>
+            </div>
+        </div>
+
+        <!-- Optgroup -->
+        <div class="etiqueta-container">
+            <div class="etiqueta-header">
+                <h3><span class="tag">&lt;optgroup&gt;</span> Grupo de Opciones</h3>
+            </div>
+            <div class="ejemplo-codigo">
+&lt;select&gt;
+    &lt;optgroup label="América"&gt;
+        &lt;option&gt;México&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;
+            </div>
+            <div class="ejemplo-visual">
+                <select>
+                    <optgroup label="América">
+                        <option>México</option>
+                        <option>Argentina</option>
+                    </optgroup>
+                    <optgroup label="Europa">
+                        <option>España</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 5: Validación HTML5 -->
+    <section class="seccion-biblia">
+        <h2>5. Validación Nativa</h2>
+        <div class="etiqueta-container">
+            <div class="ejemplo-visual">
+                <form class="demo-validacion">
+                    <input type="email" placeholder="Email válido" required>
+                    <input type="submit" value="Validar">
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

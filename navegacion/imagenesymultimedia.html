@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes y Multimedia</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="contenido-pagina">
+    <h1 class="titulo-seccion">🖼️ Imágenes y Multimedia</h1>
+
+    <!-- Imagen básica -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;img&gt;</span> Imagen básica</h2>
+            <p>Etiqueta fundamental para mostrar imágenes</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;img src="imagen.jpg" alt="Descripción" width="400"&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <img src="https://via.placeholder.com/400x200" 
+                 alt="Imagen de ejemplo" 
+                 class="demo-imagen">
+        </div>
+    </div>
+
+    <!-- Imágenes responsivas -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;picture&gt;</span> Imagen responsiva</h2>
+            <p>Adapta imágenes según el dispositivo</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;picture&gt;
+    &lt;source media="(min-width: 800px)" srcset="grande.jpg"&gt;
+    &lt;source media="(min-width: 400px)" srcset="mediana.jpg"&gt;
+    &lt;img src="pequena.jpg" alt="Descripción"&gt;
+&lt;/picture&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <picture>
+                <source media="(min-width: 800px)" 
+                        srcset="https://via.placeholder.com/800x400">
+                <source media="(min-width: 400px)" 
+                        srcset="https://via.placeholder.com/400x200">
+                <img src="https://via.placeholder.com/200x100" 
+                     alt="Imagen responsiva" 
+                     class="demo-imagen">
+            </picture>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;audio&gt;</span> Reproductor de audio</h2>
+            <p>Incrusta archivos de sonido</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Tu navegador no soporta audio
+&lt;/audio&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <audio controls class="demo-audio">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" 
+                        type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <!-- Video -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;video&gt;</span> Reproductor de video</h2>
+            <p>Incrusta archivos de video</p>
+        </div>
+        <div class="ejemplo-codigo">
+&lt;video controls width="600"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Tu navegador no soporta video
+&lt;/video&gt;
+        </div>
+        <div class="ejemplo-visual">
+            <video controls width="100%" class="demo-video">
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
+                        type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+</html>

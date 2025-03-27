@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas HTML</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="contenido-pagina">
+    <h1 class="titulo-principal">Tipos de Listas en HTML</h1>
+
+    <!-- Lista No Ordenada -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;ul&gt;</span> Lista no ordenada</h2>
+            <p>Elementos sin orden específico con viñetas</p>
+        </div>
+        
+        <div class="ejemplo-codigo">
+&lt;ul class="demo-lista"&gt;
+    &lt;li&gt;Café&lt;/li&gt;
+    &lt;li&gt;Té&lt;/li&gt;
+    &lt;li&gt;Leche&lt;/li&gt;
+&lt;/ul&gt;
+        </div>
+
+        <div class="ejemplo-visual">
+            <ul class="demo-lista">
+                <li>Café</li>
+                <li>Té</li>
+                <li>Leche</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Lista Ordenada -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;ol&gt;</span> Lista ordenada</h2>
+            <p>Elementos numerados o alfabetizados</p>
+        </div>
+        
+        <div class="ejemplo-codigo">
+&lt;ol class="demo-lista" type="I"&gt;
+    &lt;li&gt;Precalentar el horno&lt;/li&gt;
+    &lt;li&gt;Mezclar ingredientes&lt;/li&gt;
+&lt;/ol&gt;
+        </div>
+
+        <div class="ejemplo-visual">
+            <ol class="demo-lista" type="I">
+                <li>Precalentar el horno</li>
+                <li>Mezclar ingredientes</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Lista de Definición -->
+    <div class="etiqueta-container">
+        <div class="etiqueta-header">
+            <h2><span class="tag">&lt;dl&gt;</span> Lista de definiciones</h2>
+            <p>Términos con sus descripciones</p>
+        </div>
+        
+        <div class="ejemplo-codigo">
+&lt;dl class="demo-definicion"&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Lenguaje de marcado web&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Hojas de estilo en cascada&lt;/dd&gt;
+&lt;/dl&gt;
+        </div>
+
+        <div class="ejemplo-visual">
+            <dl class="demo-definicion">
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado web</dd>
+                <dt>CSS</dt>
+                <dd>Hojas de estilo en cascada</dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>

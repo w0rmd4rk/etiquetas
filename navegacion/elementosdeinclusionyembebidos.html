@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Inclusión y Embebidos</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <main class="content-column">
+        <div class="contenido-pagina">
+            
+            <!-- Sección Principal -->
+            <h1 class="titulo-principal">Elementos de Inclusión y Embebidos</h1>
+
+            <!-- Imágenes -->
+            <section class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h2 class="demo-encabezado2">&lt;img&gt; - Imágenes</h2>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;img src="imagen.jpg" 
+     alt="Paisaje montañoso" 
+     loading="lazy" 
+     width="800" 
+     height="600"&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <img src="https://picsum.photos/300/200" 
+                         alt="Ejemplo de imagen" 
+                         class="demo-imagen">
+                </div>
+            </section>
+
+            <!-- Video -->
+            <section class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h2 class="demo-encabezado2">&lt;video&gt; - Reproductor de Video</h2>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;video controls width="600" poster="thumbnail.jpg"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Tu navegador no soporta el elemento video
+&lt;/video&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <video controls width="100%">
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </section>
+
+            <!-- Audio -->
+            <section class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h2 class="demo-encabezado2">&lt;audio&gt; - Reproductor de Audio</h2>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Tu navegador no soporta el elemento audio
+&lt;/audio&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+                                type="audio/mpeg">
+                    </audio>
+                </div>
+            </section>
+
+            <!-- Iframe -->
+            <section class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h2 class="demo-encabezado2">&lt;iframe&gt; - Contenido Externo</h2>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;iframe 
+    src="https://ejemplo.com" 
+    title="Marco de ejemplo" 
+    width="100%" 
+    height="400"
+    sandbox="allow-scripts allow-same-origin"&gt;
+&lt;/iframe&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <iframe src="https://es.wikipedia.org/wiki/HTML"
+                            title="Wikipedia"
+                            class="demo-iframe"
+                            height="300"></iframe>
+                </div>
+            </section>
+
+            <!-- Canvas -->
+            <section class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h2 class="demo-encabezado2">&lt;canvas&gt; - Gráficos Dinámicos</h2>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;canvas id="miCanvas" width="300" height="150"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+    const canvas = document.getElementById('miCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#3498db';
+    ctx.fillRect(10, 10, 100, 100);
+&lt;/script&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <canvas id="miCanvas" width="300" height="150"></canvas>
+                </div>
+            </section>
+
+            <!-- SVG -->
+            <section class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h2 class="demo-encabezado2">&lt;svg&gt; - Gráficos Vectoriales</h2>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;svg width="200" height="200"&gt;
+    &lt;circle cx="100" cy="100" r="80" fill="#e74c3c"/&gt;
+    &lt;text x="50%" y="50%" text-anchor="middle"&gt;SVG&lt;/text&gt;
+&lt;/svg&gt;
+                </div>
+                <div class="ejemplo-visual">
+                    <svg width="200" height="200">
+                        <circle cx="100" cy="100" r="80" fill="#e74c3c"/>
+                        <text x="50%" y="50%" text-anchor="middle" fill="white">SVG</text>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- Script -->
+            <section class="etiqueta-container">
+                <div class="etiqueta-header">
+                    <h2 class="demo-encabezado2">&lt;script&gt; - Código Ejecutable</h2>
+                </div>
+                <div class="ejemplo-codigo">
+&lt;script src="app.js" defer&gt;&lt;/script&gt;
+&lt;script&gt;
+    console.log('Ejemplo de script interno');
+&lt;/script&gt;
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        // Canvas Demo
+        const canvas = document.getElementById('miCanvas');
+        if(canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#3498db';
+            ctx.fillRect(10, 10, 100, 100);
+            ctx.fillStyle = '#2c3e50';
+            ctx.fillRect(120, 30, 80, 80);
+        }
+    </script>
+</body>
+</html>
